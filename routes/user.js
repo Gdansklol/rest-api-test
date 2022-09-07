@@ -1,8 +1,5 @@
-//import express from "express"
-
 const express = require('express')
 const router = express.Router()
-
 const { v4: uuidv4 } = require('uuid');
 
 let cars = [];
@@ -20,13 +17,12 @@ router.get('/:id',(req,res)=> {
 
 router.post('/',(req,res) => {
 	const car = req.body;
-
+	
 	const id = uuidv4();
-	console.log(id)
-	const carsId = {...car, "id": id}
+	const newCar = {...car, "id": id}
 
-	cars.push(carsId);
-	res.send(`Car with the color ${req.body} added.`)
+	cars.push(newCar);
+	res.send(`Car with the color ${newCar.color} added.`)
 });
 
 router.put('/:id',(req,res)=>{
