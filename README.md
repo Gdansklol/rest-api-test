@@ -13,7 +13,7 @@ cat docker-compose.yml
 docker kill $(docker ps -q)
 
 # Och nu ska vi starta vår utvecklingsmijö
-docker-compose up
+docker-compose up -d
 
 # Och här ser ni vår mongodb databas, och backend server
 docker ps
