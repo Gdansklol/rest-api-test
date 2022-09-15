@@ -3,7 +3,7 @@
 ```bash
 
 # Vi har skapat en docker compose fil för att skapa en utvecklingsmiljö
-cd ~/jensen-backend/JENSENfy-backend-14
+cd ~/jensen-backend/JENSENfy-backend-14/server
 
 # Vår compose fil ser ut så här
 
